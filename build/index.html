@@ -107,9 +107,13 @@
 <section id="contact" class="d-flex justify-content-center align-items-center">
   <div class="container">
     <h1 class="mb-4 text-center">Contact</h1>
-    <p class="text-center">We work remotely from France. Send us an <a href="mailto:contact@vinua.com">email</a>.</p>
+    <p class="text-center">We work remotely from France. Send us an <a href="mailto:contact@thisdomain">email</a>.</p>
   </div>
 </section>
+
+<script>
+  document.querySelector("#contact a").setAttribute("href", "mailto:contact@" + window.location.hostname);
+</script>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
