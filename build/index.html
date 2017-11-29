@@ -8,27 +8,113 @@
     <title>Vinua</title>
 
     <link href="https://fonts.googleapis.com/css?family=Lato:900|Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="/stylesheets/site.css" rel="stylesheet" />
   </head>
 
-  <body class="index">
-    <nav class="navbar navbar-inverse fixed-top">
+  <body class="index" data-spy="scroll" data-target="#navbar-body" data-offset="0">
+    <nav id="navbar-body" class="navbar navbar-expand-lg navbar-inverse fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="/"><h3>Vinua</h3></a>
+    <a class="navbar-brand" href="#"><h3>Vinua</h3></a>
+
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar-links">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 
-<div class="container d-flex justify-content-center align-items-center" style="height:100vh">
-  <div>
-    <h1 class="mb-0">Web Consulting</h1>
-  <div>
-</div>
+<section id="home" class="d-flex justify-content-center align-items-center">
+  <div class="container">
+    <h1 class="mb-0 text-center">Web Consulting</h1>
+  </div>
+</section>
+
+<section id="projects" class="d-flex justify-content-center align-items-center">
+  <div class="container">
+    <h1 class="my-5 text-center">Projects</h1>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <article class="card bg-light mb-4">
+          <div class="card-body">
+            <h2 class="card-title"><a href="https://pi.ctu.re">Pi.ctu.re</a></h2>
+            <p class="card-text">A picture hosting service where users are not the product.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-sm-4">
+        <article class="card bg-light mb-4">
+          <div class="card-body">
+            <h2 class="card-title"><a href="https://provisioning.sh">Provisioning.sh</a></h2>
+            <p class="card-text">A script to setup your own platform as a service.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-sm-4">
+        <article class="card bg-light mb-4">
+          <div class="card-body">
+            <h2 class="card-title"><a href="https://paste.vinc.cc">Paste.vinc.cc</a></h2>
+            <p class="card-text">A modern markdown pastebin secured by libsodium.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <article class="card bg-light mb-4">
+          <div class="card-body">
+            <h2 class="card-title"><a href="https://news.vinc.cc">News.vinc.cc</a></h2>
+            <p class="card-text">Search the news making the headlines of newspapers and social networks.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-sm-4">
+        <article class="card bg-light mb-4">
+          <div class="card-body">
+            <h2 class="card-title"><a href="https://rehost.vinc.cc">Rehost.at</a></h2>
+            <p class="card-text">Fast service to rehost and resize images.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-sm-4">
+        <article class="card bg-light mb-4">
+          <div class="card-body">
+            <h2 class="card-title"><a href="https://reader.fr">Reader.fr</a></h2>
+            <p class="card-text">A project by Slate.fr to find the best content from the Internet.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="d-flex justify-content-center align-items-center">
+  <div class="container">
+    <h1 class="mb-4 text-center">Contact</h1>
+    <p class="text-center">We work remotely from France. Send us an <a href="mailto:contact@vinua.com">email</a>.</p>
+  </div>
+</section>
 
 
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script src="/javascripts/site.js"></script>
   </body>
 </html>

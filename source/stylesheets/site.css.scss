@@ -1,11 +1,70 @@
 body {
-  background: #378;
-  color: ivory;
   font-family: "Raleway", sans-serif;
+  font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.navbar,
+section#home,
+section#contact {
+  background: #378;
+  color: rgba(ivory, 0.95);
+  
+  a {
+    color: inherit;
+  }
+  a:hover, a:active {
+    text-decoration: none;
+  }
+
+  .nav-link {
+    color: rgba(ivory, 0.8);
+
+    &.active, &:active, &:hover {
+      color: rgba(ivory, 1.0);
+    }
+  }
+}
+
+section#projects {
+  background: white;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #555;
+  }
+  a {
+    color: inherit;
+  }
+}
+
+section#contact {
+  a {
+    border-bottom: solid 2px rgba(ivory, 0.5);
+  }
+  a:hover, a:active {
+    border-bottom: solid 2px rgba(ivory, 0.8);
+  }
+}
+
+#navbar-body {
+  .nav-item {
+    margin: 0 0.5rem;
+  }
+  .nav-link {
+    padding: 0;
+    margin-bottom: -2px;
+    border-bottom: solid 2px transparent;
+  }
+  .nav-link.active {
+    border-bottom-color: rgba(ivory, 0.8);
+  }
 }
