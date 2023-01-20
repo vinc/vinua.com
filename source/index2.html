@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang=en>
+  <head>
+    <meta charset=utf-8>
+    <title>Vinua</title>
+    <style>
+      body {
+        max-width: 36em;
+        margin: 2em auto;
+        color: #333;
+      }
+      h1, h2 {
+        color: #3CC;
+      }
+      h1 {
+        text-align: center;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          color: #CCC;
+          background: #111;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Vinua</h1>
+
+    <p>Hello, my name is Vincent Ollivier and I am a remote consultant
+    based in France with 14 years of experience working with startups. I specialize
+    in helping companies scale their infrastructure and web services to meet the
+    demands of their growing business.</p>
+
+    <h2>Services</h2>
+    <ul>
+      <li>Infrastructure Design</li>
+      <li>Software Engineering</li>
+      <li>Training and Mentoring</li>
+    </ul>
+
+    <h2>Technologies</h2>
+    <ul>
+      <li>Ruby, Rust, JavaScript</li>
+      <li>Redis, PostgreSQL, MySQL</li>
+      <li>AWS, GitHub, CircleCI</li>
+    </ul>
+
+    <h2>Priorities</h2>
+    <ul>
+      <li>Security</li>
+      <li>Scalability</li>
+      <li>Sustainability</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p id="email">contact@thisdomain</p>
+
+    <script>document.getElementById("email").textContent = "contact@" + document.domain;</script>
+  </body>
+</html>
