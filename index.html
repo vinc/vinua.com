@@ -5,21 +5,44 @@
     <title>Vinua</title>
     <style>
       body {
-        max-width: 36em;
-        margin: 2em auto;
+        max-width: 38em;
+        margin: 0 auto;
+        padding: 1em;
         color: #333;
-        font: menu;
-        font-size: 16px;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
       }
       h1, h2 {
-        color: #3CC;
+        color: #3cc;
       }
       h1 {
+        font-size: clamp(4rem, 20vw, 10rem);
         text-align: center;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(45deg, #0ff, #f0f);
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+      }
+      ul {
+        padding-left: 1em;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+      }
+      .col {
+        flex: 1;
       }
       @media (prefers-color-scheme: dark) {
         body {
-          color: #CCC;
+          color: #ccc;
           background: #111;
         }
       }
@@ -33,29 +56,39 @@
     in helping companies scale their infrastructure and web services to meet the
     demands of their growing business.</p>
 
-    <h2>Services</h2>
-    <ul>
-      <li>Infrastructure Design</li>
-      <li>Software Engineering</li>
-      <li>Training and Mentoring</li>
-    </ul>
+    <div class="row">
+      <div class="col">
+        <h2>Services</h2>
+        <ul>
+          <li>Infrastructure Design</li>
+          <li>Software Engineering</li>
+          <li>Training and Mentoring</li>
+        </ul>
+      </div>
 
-    <h2>Technologies</h2>
-    <ul>
-      <li>Ruby, Rust, JavaScript</li>
-      <li>Redis, PostgreSQL, MySQL</li>
-      <li>AWS, GitHub, CircleCI</li>
-    </ul>
+      <div class="col">
+        <h2>Technologies</h2>
+        <ul>
+          <li>Ruby, Rust, JavaScript</li>
+          <li>Redis, PostgreSQL</li>
+          <li>AWS, GitHub, CircleCI</li>
+        </ul>
+      </div>
 
-    <h2>Priorities</h2>
-    <ul>
-      <li>Security</li>
-      <li>Scalability</li>
-      <li>Sustainability</li>
-    </ul>
+      <div class="col">
+        <h2>Priorities</h2>
+        <ul>
+          <li>Security</li>
+          <li>Scalability</li>
+          <li>Sustainability</li>
+        </ul>
+      </div>
+    </div>
 
-    <h2>Contact</h2>
-    <p id="email">contact@thisdomain</p>
+    <div class="text-center">
+      <h2>Contact</h2>
+      <p id="email">contact@thisdomain</p>
+    </div>
 
     <script>document.getElementById("email").textContent = "contact@" + document.domain;</script>
   </body>
